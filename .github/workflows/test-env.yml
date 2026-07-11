@@ -1,0 +1,12 @@
+name: test-env
+on: workflow_dispatch
+permissions:
+  contents: read
+  packages: write
+jobs:
+  deploy-test:
+    uses: sebastiancardona-dev/workflows/.github/workflows/deploy-test.yml@main
+    with:
+      app: hello-ecosystem
+    secrets:
+      VPS_SSH_KEY: ${{ secrets.VPS_SSH_KEY }}
