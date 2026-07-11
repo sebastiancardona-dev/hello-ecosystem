@@ -11,5 +11,6 @@ jobs:
     uses: sebastiancardona-dev/workflows/.github/workflows/deploy-test.yml@main
     with:
       app: hello-ecosystem
+      base: hello              # test env: hello.test.sebastiancardona.dev
     secrets:
       VPS_SSH_KEY: ${{ secrets.VPS_SSH_KEY }}
