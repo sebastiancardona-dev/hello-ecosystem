@@ -25,4 +25,4 @@ Runtime: `nginxinc/nginx-unprivileged` (non-root, port 8080), multi-stage build,
 
 - **Production**: `git tag v0.1.1 && git push --tags` → live at hello.sebastiancardona.dev.
 - **Testing env**: Actions → *test-env* → Run workflow on any branch → deployed to
-  `hello.test.sebastiancardona.dev` (basic-auth-protected, throwaway).
+  `hello-test.sebastiancardona.dev` (public, throwaway).
